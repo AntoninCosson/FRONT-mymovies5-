@@ -38,7 +38,7 @@ function Home() {
   const [moviesData, setMoviesData] = useState([]);
 
   useEffect(() => {
-    fetch("https://back-mymovies5.vercel.app//movies")
+    fetch("https://back-mymovies5.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         setMoviesData(data.movies);
